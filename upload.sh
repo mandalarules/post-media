@@ -13,3 +13,4 @@ mkdir -p "${dest:h}"; cp "$src" "$dest"
 git pull -q --rebase origin main 2>/dev/null || true
 git add "$dest" && git commit -qm "Add $dest" && git push -q origin HEAD:main
 echo "https://raw.githubusercontent.com/mandalarules/post-media/main/$dest"
+echo "https://mandalarules.github.io/post-media/$dest  (Pages, live ~1 min after push; use this for video)"
